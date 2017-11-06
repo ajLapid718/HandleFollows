@@ -7,7 +7,7 @@ def get_password
   begin
     instagram_password = ask("Enter your password: ") { |q| q.echo = "*" }
     password_confirmation = ask("Confirm your password: ") { |q| q.echo = "*" }
-    instagram_password == password_confirmation ? instagram_password : raise Exception.new("Your passwords do not match. Try again.")
+    instagram_password == password_confirmation ? instagram_password : Exception.new("Your passwords do not match. Try again.")
   rescue Exception => error_message
     puts "#{error_message}"
     retry
