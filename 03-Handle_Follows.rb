@@ -31,3 +31,8 @@ def accept_all_or_reject_all
     puts "Successful. #{(amount_of_requests) - (counter + 1)} more requests left."
   end
 end
+
+# Invoke Handle Follows Process
+click_on_heart
+open_follow_requests
+accept_all_or_reject_all
