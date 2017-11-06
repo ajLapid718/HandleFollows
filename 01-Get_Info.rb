@@ -30,6 +30,7 @@ def accept_or_reject
   rescue => e
     puts "#{e}"
     retry
+  end
 end
 
 # Invoke the Getting Info Process
