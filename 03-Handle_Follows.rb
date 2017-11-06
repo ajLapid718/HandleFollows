@@ -16,7 +16,7 @@ def open_follow_requests
   "Successfully opened your follow requests..."
 end
 
-def choose
+def make_a_choice
   if DECISION == "A"
     @response = "Accept"
     @activity = "accepting"
@@ -34,12 +34,12 @@ def accept_all_or_reject_all
     user = @browser.a(:class => /^_2g7d5 notranslate _nodr2$/).text
     puts "Currently #{@activity} a follow request from user: #{user}"
     @browser.li(:class => /^_75ljm _3qhgf$/).button(:text => @response).click
-    puts "Successful. #{(amount_of_requests) - (counter + 1)} more requests left."
+    puts "Successful. #{(amount_of_requests) - (counter + 1)} requests remaining."
   end
 end
 
 # Invoke Handle Follows Process
 click_on_heart
 open_follow_requests
-choose
+make_a_choice
 accept_all_or_reject_all
