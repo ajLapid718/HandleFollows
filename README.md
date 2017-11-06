@@ -6,4 +6,4 @@
 
 ## Expected Output
 
-![Output](Output.gif)
+![Output](Output_Updated.gif)
