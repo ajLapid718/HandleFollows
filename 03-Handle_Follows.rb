@@ -33,7 +33,7 @@ def accept_all_or_reject_all
   amount_of_requests.times do |counter|
     user = @browser.a(:class => /^_2g7d5 notranslate _nodr2$/).text
     puts "Currently #{@activity} a follow request from user: #{user}"
-    @browser.li(:class => /^_75ljm _3qhgf$/).button(:text => "#{@response}").click
+    @browser.li(:class => /^_75ljm _3qhgf$/).button(:text => @response).click
     puts "Successful. #{(amount_of_requests) - (counter + 1)} more requests left."
   end
 end

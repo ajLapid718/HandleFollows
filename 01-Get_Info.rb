@@ -22,7 +22,7 @@ def accept_or_reject
   begin
     print "Enter letter A to accept all requests; enter letter R to reject all requests: "
     decision = gets.chomp
-    if decision == "A" || "R"
+    if decision == "A" || decision == "R"
       return decision
     else
       raise Exception.new("Invalid entry. Please try again.")
