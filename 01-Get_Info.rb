@@ -20,8 +20,8 @@ end
 
 def accept_or_reject
   begin
-    print "Enter letter A to accept all requests; enter letter R to reject all requests: "
-    decision = gets.chomp
+    print "Enter the letter A to accept all requests; enter the letter R to reject all requests: "
+    decision = gets.upcase.chomp
     if decision == "A" || decision == "R"
       return decision
     else
