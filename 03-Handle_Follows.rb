@@ -21,16 +21,9 @@ def accept_all_or_reject_all
   puts "Currently rejecting all follow requests..."
   amount_of_requests = @browser.lis(:class => /^_75ljm _3qhgf$/).count
   amount_of_requests.times do |counter|
-    begin
-      sleep(2)
-      user = browser.a(:class => /^_2g7d5 notranslate _nodr2$/).text
-      sleep(2)
-      puts "Currently denying a follow request from user: #{user}"
-      @browser.li(:class => /^_75ljm _3qhgf$/).button(:text => "Hide").click
-      sleep(2)
-    rescue
-      puts "Moving on..."
-    end
+    user = @browser.a(:class => /^_2g7d5 notranslate _nodr2$/).text
+    puts "Currently denying a follow request from user: #{user}"
+    @browser.li(:class => /^_75ljm _3qhgf$/).button(:text => "Hide").click
     puts "Successful. #{(amount_of_requests) - (counter + 1)} more requests left."
   end
 end
