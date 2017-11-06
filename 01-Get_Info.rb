@@ -27,7 +27,7 @@ def accept_or_reject
     else
       raise Exception.new("Invalid entry. Please try again.")
     end
-  rescue => e
+  rescue Exception => e
     puts "#{e}"
     retry
   end
