@@ -18,7 +18,7 @@ end
 
 def make_a_choice
   if DECISION == "A"
-    @response = "Accept"
+    @response = "Approve"
     @activity = "accepting"
   else
     @response = "Hide"
