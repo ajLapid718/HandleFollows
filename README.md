@@ -1,8 +1,8 @@
 ## Background
 
-I was on my phone looking at all of the people on Instagram who requested to follow my private account. Aware that most of them were most likely strangers and/or were spam requests, I wanted to clear them out...all two-hundred fifteen of them. Although I wouldn't have minded handling it manually on my smartphone, two things prompted me to go about composing a script. One: I had a feeling that this clutter could easily build up over time and trouble me again in the future. Two: This could be useful for someone else going through the same thing. All of this led me toward Instagram's website and making observations while mapping out various approaches.
+I was on my phone looking at all of the users on Instagram who requested to follow my private account. Aware that most of them were requests from strangers and/or were spam requests, I wanted to clear them out...all two-hundred fifteen requests. Although I wouldn't have minded handling it manually one by one and tap by tap, two things prompted me to go about composing a script. First, I had a feeling this type of clutter could easily build up again over time and trouble me in the future. Secondly, this program could be useful for someone else going through the same predicament. All of this led me toward exploring Instagram's website.
 
-Using what I learned from my previous experience with automating Yahoo Fantasy Basketball, I had some sort of basis to go off of. After some trial and error, the objective was reached. In my case, I could successfully reject unwanted requests. I could imagine that in another instance, however, a user would want to accept all of those requests. There's a chance that more followers would contribute to growing their brand. There's a chance that someone is just starting out on Instagram, so there's a good chance people they personally know will be flooding their account with requests. The script will ask the user which option he or she intends to follow through on in order to handle the responses appropriately.
+Using what I learned from my previous experience with automating Yahoo Fantasy Basketball, I had some sort of basis to go off of. After some trial and error, the objective was reached. In my case, I could successfully reject unwanted requests, as demonstrated in the gifs below. I could imagine that in another instance, however, a user would opt to accept all of those requests. A justification for that could be that followers would contribute to growing their brand and online presence in tune with the concept of growth hacking. Perhaps an individual is just starting out on Instagram, so there's a good chance people they personally know will be flooding their account with requests. Regardless of the scenario, the script will inquire with the user which option he or she intends to follow through on in order to handle the responses appropriately.
 
 ## The Situation
 
@@ -37,9 +37,20 @@ Using what I learned from my previous experience with automating Yahoo Fantasy B
 
 ## Prompts
 
+Preview of Prompt Layout:
+
 ```
 Enter your Instagram username:
 Enter your password:
 Confirm your password:
 Enter the Letter A to accept all requests; enter the letter R to reject all requests:
+```
+
+Example of a Valid Prompt Submission:
+
+```
+Enter your Instagram username: david1234321
+Enter your password: ********
+Confirm your password: ********
+Enter the Letter A to accept all requests; enter the letter R to reject all requests: R
 ```
