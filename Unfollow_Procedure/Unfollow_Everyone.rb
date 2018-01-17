@@ -69,6 +69,7 @@ def click_on_my_profile
 end
 
 def grab_following_count
+  sleep(2)
   @total_following_count = @browser.spans(:class => /^_fd86t _he56w$/).last.text.delete(",").to_i
 end
 
