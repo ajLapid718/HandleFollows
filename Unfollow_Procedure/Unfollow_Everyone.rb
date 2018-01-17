@@ -74,7 +74,9 @@ def grab_following_count
 end
 
 def click_on_following
+  sleep(1)
   @browser.spans(:class => /^_fd86t _he56w$/).last.click
+  sleep(1)
 end
 
 # MAIN METHOD
