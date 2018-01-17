@@ -115,9 +115,6 @@ def shutdown
 end
 
 def execute_main
-  START_TIME = Time.now
-  USERNAME = get_username
-  PASSWORD = get_password
   start_browser_session
   click_on_log_in
   enter_email
@@ -131,5 +128,8 @@ def execute_main
 end
 
 if __FILE__ == $PROGRAM_NAME
+  START_TIME = Time.now
+  USERNAME = get_username
+  PASSWORD = get_password
   execute_main
 end
