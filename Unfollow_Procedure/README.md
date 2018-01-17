@@ -6,7 +6,7 @@ This automation script assists in regaining control of your Instagram Feed by un
 
 ## The Situation
 
-ToBeAnnounced.gif
+![Amount of Followers](AmountOfFollowers.PNG)
 
 ## Expected Output
 
