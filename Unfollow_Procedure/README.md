@@ -10,7 +10,7 @@ This automation script assists in regaining control of your Instagram Feed by un
 
 ## Expected Output
 
-ToBeAnnounced.gif
+![Unfollowed Users](UnfollowedUsers.gif)
 
 ## Dependencies
 
