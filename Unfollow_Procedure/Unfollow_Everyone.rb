@@ -24,8 +24,8 @@ end
 
 # COMMENCE LOGIN
 def start_browser_session
-  @browser = Watir::Browser.start("https://www.instagram.com/", :chrome, switches: %w[--log-level=3 --incognito])
-  @browser.window.maximize
+  @browser = Watir::Browser.start("https://www.instagram.com/", :chrome, switches: %w[--log-level=3 --headless])
+  # @browser.window.maximize
   Watir.default_timeout = 10
   puts "Opening Instagram's website..."
 end
@@ -85,9 +85,7 @@ def unfollow_them_all
   puts "Currently unfollowing all of the users you were following."
   @total_following_count.times do |counter|
     @browser.button(:text => /^Following$/).click
-    sleep(0.5)
     puts "Successful. #{@total_following_count - (counter + 1)} remaining."
-    sleep(0.5)
   end
 end
 
