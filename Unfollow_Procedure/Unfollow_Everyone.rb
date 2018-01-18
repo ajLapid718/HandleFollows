@@ -100,8 +100,9 @@ def grab_all_usernames
   new_document = File.open("ListOfUsernames.txt", "w")
   counter = 1
   @browser.divs(:class => "_f5wpw").each do |username|
-    account_name, actual_name = username.text.split("\n")
-    new_document.puts "#{counter} -- Account Name: #{account_name} -- Actual Name: #{actual_name}"
+    names = username.text.split("\n")
+    account_name, actual_name = [names.first, names.last]
+    new_document.puts "#{counter} -- Account Name: @#{account_name} -- Actual Name: #{actual_name}"
     counter += 1
     puts "Wrote down #{counter} usernames, around #{(100) - ((counter.to_f/@total_following_count) * 100).round}% remaining" if counter % (@total_following_count * 0.10).round == 0
   end
