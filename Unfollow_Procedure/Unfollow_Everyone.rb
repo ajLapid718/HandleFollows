@@ -24,8 +24,8 @@ end
 
 # COMMENCE LOGIN
 def start_browser_session
-  @browser = Watir::Browser.start("https://www.instagram.com/", :chrome, switches: %w[--log-level=3 --headless])
-  # @browser.window.maximize
+  @browser = Watir::Browser.start("https://www.instagram.com/", :chrome, switches: %w[--log-level=3 --incognito])
+  @browser.window.maximize
   Watir.default_timeout = 10
   puts "Opening Instagram's website..."
 end
