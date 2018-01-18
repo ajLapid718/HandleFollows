@@ -102,8 +102,9 @@ def grab_all_usernames
     account_name, actual_name = username.text.split("\n")
     new_document.puts "#{counter} -- Account Name: #{account_name} -- Actual Name: #{actual_name}"
     counter += 1
+    puts "Wrote down #{counter} usernames, around #{(100) - ((counter/@total_following_count).to_f * 100).round}% remaining" if counter % (@total_following_count * 0.10).round == 0
   end
-  puts "Successfully wrote down all of the usernames. Closing file now."
+  puts "Successfully wrote down all #{@total_following_count} of the usernames. Closing file now."
   new_document.close
 end
 
