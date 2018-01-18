@@ -96,6 +96,7 @@ def grab_all_usernames
   puts " "
   puts "Successfully unfollowed everyone."
   puts "Currently jotting down all of the usernames unfollowed..."
+  puts " "
   new_document = File.open("ListOfUsernames.txt", "w")
   counter = 1
   @browser.divs(:class => "_f5wpw").each do |username|
@@ -104,6 +105,7 @@ def grab_all_usernames
     counter += 1
     puts "Wrote down #{counter} usernames, around #{(100) - ((counter.to_f/@total_following_count) * 100).round}% remaining" if counter % (@total_following_count * 0.10).round == 0
   end
+  puts " "
   puts "Successfully wrote down all #{@total_following_count} of the usernames. Closing file now."
   new_document.close
 end
