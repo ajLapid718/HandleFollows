@@ -4,6 +4,8 @@ There comes a point when the amount of users an individual is following on Insta
 
 This automation script assists in regaining control of your Instagram Feed by unfollowing every user you are currently following. Afterwards, a text file (`List_Of_Usernames.txt`) containing all of the usernames unfollowed is created within the same directory the script was executed in. Whoever runs this script can then open that text file in Notepad, Microsoft Word, Atom, etc. and use that information as a starting point to re-follow certain accounts.
 
+As a heads-up, Instagram sets limitations on the amount of people you can follow and unfollow during an undisclosed period of time. Experiences with this particular script may vary depending upon a multitude of factors.
+
 ## The Situation
 
 ![Amount of Followers](AmountOfFollowers.PNG)
