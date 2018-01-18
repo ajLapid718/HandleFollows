@@ -82,9 +82,9 @@ end
 # MAIN METHOD
 def unfollow_them_all
   puts " "
-  puts "Currently unfollowing all of the users you were following."
+  puts "Currently unfollowing all of the users you were following..."
   @total_following_count.times do |counter|
-    @browser.button(:text => /^Following$/).click
+    @browser.button(:class => /^_qv64e _t78yp _4tgw8 _njrw0$/).click
     puts "Successful. #{@total_following_count - (counter + 1)} remaining."
   end
 end
