@@ -95,7 +95,7 @@ def grab_all_usernames
   puts "Successfully unfollowed everyone."
   puts "Currently jotting down all of the usernames unfollowed..."
   puts " "
-  new_document = File.open("ListOfUsernames.txt", "w")
+  new_document = File.open("List_Of_Usernames.txt", "w")
   counter = 1
   @browser.divs(:class => "_f5wpw").each do |username|
     names = username.text.split("\n")
